@@ -5,11 +5,11 @@ rio_term_font_family: 'monospace'
 rio_term_font_size: 13
 
 # font-family style for bold text
-rio_term_font_style_bold: 'Bold'
+rio_term_font_style_bold: 'Normal'
 
 # font-family style for italic text
 rio_term_font_style_italic: 'Italic'
 
 # font-family style for bold-italic text
-rio_term_font_style_bold_italic: 'Bold Italic'
+rio_term_font_style_bold_italic: 'Italic'
 

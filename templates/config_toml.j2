@@ -7,6 +7,7 @@ confirm-before-quit = false
 hide-mouse-cursor-when-typing = {{ 'true' if rio_term_hide_mouse_when_typing else 'false' }}
 padding-x = {{ rio_term_window_padding_width_pixels }}
 padding-y = [{{ rio_term_window_padding_top_pixels }}, {{ rio_term_window_padding_bottom_pixels }}]
+draw-bold-text-with-light-colors = {{ 'true' if rio_term_draw_bold_text_with_light_colors else 'false' }}
 
 [colors]
 
@@ -32,7 +33,6 @@ background       = "{{ rio_term_term_colors.background.bg }}"
 dim-foreground   = "{{ rio_term_term_colors.text.fg }}"
 light-foreground = "{{ rio_term_term_colors.text.fg_bright }}"
 cursor           = "{{ rio_term_term_colors.cursor.fg_text }}"
-draw-bold-text-with-light-colors = {{ 'true' if rio_term_draw_bold_text_with_light_colors else 'false' }}
 
 [cursor]
 
@@ -88,8 +88,8 @@ opacity = {{ rio_term_colors.background.opacity }}
 blur = {{ 'true' if rio_term_window_bg_blur else 'false' }}
 decorations = "{{ rio_term_window_decorations }}"
 
-[[bindings]]
-key = "{{ rio_term_keymap_close_term_window.key }}"
-with = "{{rio_term_keymap_close_term_window.mods }}"
-action = "CloseSplitOrTab"
+# [[bindings]]
+# key = "{{ rio_term_keymap_close_term_window.key }}"
+# with = "{{rio_term_keymap_close_term_window.mods }}"
+# action = "CloseSplitOrTab"
 
