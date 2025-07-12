@@ -1,0 +1,41 @@
+# Ref: https://rioterm.com/docs/config
+
+# shell command to start in the terminal emulator
+rio_term_shell_cmd: '/bin/sh'
+
+# window decorations: "Enabled", "Disabled", "Transparent", "Buttonless"
+rio_term_window_decorations: "Enabled"
+# title options: "title", "program", "absolute_path", "columns", "lines"
+rio_term_title_bar_dynamic_content: "{{ title || program }}"
+# padding (in pixels) to put in between terminal text and window border
+rio_term_window_padding_width_pixels: 5
+rio_term_window_padding_top_pixels: 5
+rio_term_window_padding_bottom_pixels: 5
+# blur the window background
+rio_term_window_bg_blur: false
+
+# tab nav mode: "Bookmark" (icons), "BottomTab", or "TopTab"
+rio_term_tab_nav_mode: 'BottomTab'
+# hide the nav display on the window when there is only one tab
+rio_term_hide_nav_display_when_single: false
+
+# For quicker scroll, increase multiplier. For slower scroll, increase divider.
+rio_term_scroll_multiplier: 3.0
+rio_term_scroll_divider: 1.0
+
+# max number of lines to keep in the scrollback buffer
+rio_term_scrollback_history: 10000
+
+# shape of cursor: 'block', 'beam', or 'underline'
+rio_term_cursor_shape: 'block'
+# whether cursor blinks
+rio_term_cursor_blink: false
+# cursor blink interval in millisec (if rio_term_cursor_blink sets blinking)
+rio_term_cursor_blink_interval_ms: 250
+
+# opacity of all unfocused splits
+rio_term_unfocused_split_opacity: 0.75
+
+# temporarily hide the mouse cursor when typing
+rio_term_hide_mouse_when_typing: true
+

@@ -1,0 +1,7 @@
+- name: "Install the 'rio-terminal-emulator' application package"
+  ansible.builtin.package:
+    name: rio-terminal-emulator
+    state: present
+  become: true
+  become_user: root
+

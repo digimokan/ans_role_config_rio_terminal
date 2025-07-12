@@ -1,0 +1,15 @@
+# main font-family
+rio_term_font_family: 'monospace'
+
+# font size, in integer or fractional
+rio_term_font_size: 13
+
+# font-family style for bold text
+rio_term_font_style_bold: 'Bold'
+
+# font-family style for italic text
+rio_term_font_style_italic: 'Italic'
+
+# font-family style for bold-italic text
+rio_term_font_style_bold_italic: 'Bold Italic'
+

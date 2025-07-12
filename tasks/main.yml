@@ -1,0 +1,6 @@
+- name: "Install Rio Terminal"
+  ansible.builtin.include_tasks: install/main.yml
+
+- name: "Configure Rio Terminal"
+  ansible.builtin.include_tasks: configure/main.yml
+

@@ -1,0 +1,95 @@
+# vim: set filetype=toml:
+# ANSIBLE-MANAGED CONFIGURATION FILE
+# Ref:
+#   https://rioterm.com/docs/config
+
+confirm-before-quit = false
+hide-mouse-cursor-when-typing = {{ rio_term_hide_mouse_when_typing }}
+padding-x = {{ rio_term_window_padding_width_pixels }}
+padding-y = [{{ rio_term_window_padding_top_pixels }}, {{ rio_term_window_padding_bottom_pixels }}]
+
+[colors]
+
+dim-black   = '{{ rio_term_colors.black.color0_dimmed }}'
+dim-red     = '{{ rio_term_colors.red.color1_dimmed }}'
+dim-green   = '{{ rio_term_term_colors.green.color2_dimmed }}'
+dim-yellow  = '{{ rio_term_term_colors.yellow.color3_dimmed }}'
+dim-blue    = '{{ rio_term_term_colors.blue.color4_dimmed }}'
+dim-magenta = '{{ rio_term_term_colors.magenta.color5_dimmed }}'
+dim-cyan    = '{{ rio_term_term_colors.cyan.color6_dimmed }}'
+dim-white   = '{{ rio_term_term_colors.white.color7_dimmed }}'
+
+light-black   = '{{ rio_term_term_colors.black.color8_bright }}'
+light-red     = '{{ rio_term_term_colors.red.color9_bright }}'
+light-green   = '{{ rio_term_term_colors.green.color10_bright }}'
+light-yellow  = '{{ rio_term_term_colors.yellow.color11_bright }}'
+light-blue    = '{{ rio_term_term_colors.blue.color12_bright }}'
+light-magenta = '{{ rio_term_term_colors.magenta.color13_bright }}'
+light-cyan    = '{{ rio_term_term_colors.cyan.color14_bright }}'
+light-white   = '{{ rio_term_term_colors.white.color15_bright }}'
+
+background       = '{{ rio_term_term_colors.background.bg }}'
+dim-foreground   = '{{ rio_term_term_colors.text.fg }}'
+light-foreground = '{{ rio_term_term_colors.text.fg_bright }}'
+cursor           = '{{ rio_term_term_colors.cursor.fg_text }}'
+draw-bold-text-with-light-colors = {{ rio_term_draw_bold_text_with_light_colors }}
+
+[cursor]
+
+shape    = '{{ rio_term_cursor_shape }}'
+blinking = {{ rio_term_cursor_blink }}
+blinking-interval = {{ rio_term_cursor_blink_interval_ms }}
+
+[fonts]
+
+size = {{ rio_term_font_size }}
+
+[fonts.regular]
+
+family = '{{ rio_term_font_family }}'
+style = 'Normal'
+
+[fonts.bold]
+
+family = '{{ rio_term_font_family }}'
+style = '{{ rio_term_font_style_bold }}'
+
+[fonts.italic]
+
+family = '{{ rio_term_font_family }}'
+style = '{{ rio_term_font_style_italic }}'
+
+[fonts.bold-italic]
+
+family = '{{ rio_term_font_family }}'
+style = '{{ rio_term_font_style_bold_italic }}'
+
+[navigation]
+
+mode = {{ rio_term_tab_nav_mode }}
+use-split = true
+unfocused-split-opacity = {{ rio_term_unfocused_split_opacity }}
+hide-if-single = {{ rio_term_hide_nav_display_when_single }}
+use-current-path = true
+
+[scroll]
+
+multiplier = {{ rio_term_scroll_multiplier }}
+divider = {{ rio_term_scroll_divider }}
+
+[shell]
+program = "{{ rio_term_shell_cmd }}"
+
+[title]
+content = "{{ rio_term_title_bar_dynamic_content }}"
+
+[window]
+opacity = {{ rio_term_colors.background.opacity }}
+blur = {{ rio_term_window_bg_blur }}
+decorations = "{{ rio_term_window_decorations }}"
+
+[[bindings]]
+key = "{{ rio_term_keymap_close_term_window.key }}"
+with = "{{rio_term_keymap_close_term_window.mods }}"
+action = "CloseSplitOrTab"
+

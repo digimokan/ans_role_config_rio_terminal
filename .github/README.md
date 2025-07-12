@@ -50,19 +50,19 @@ Install and configure the rio terminal emulator.
    - hosts: localhost
      connection: local
      tasks:
-       - name: "Install and configure the rio terminal emulator"
+       - name: "Install and configure the Rio terminal emulator"
          ansible.builtin.include_role:
            name: ans_role_config_rio_terminal
            public: true
          vars:
-           rio_user_name: "user2"
+           rio_term_user_name: "user2"
    ```
 
 ## Role Options
 
 Vars that must be defined when including the role in the playbook:
 
-  * [dependencies](../defaults/main/dependencies/user.yml)
+  * [dependencies](../defaults/main/dependencies/main.yml)
 
 Vars with default values, which can be overridden in the playbook:
 

@@ -1,0 +1,21 @@
+# command to execute to start rio
+rio_term_main_cmd: 'rio'
+
+# method of "tagging" a unique terminal window: "title" or "class"
+rio_term_window_id_type: "title"
+
+# arg to rio command to set the name of the X11 window title
+rio_term_arg_title: "--title_placeholder "
+
+# arg to rio command to start rio in a specified directory
+rio_term_arg_starting_dir: "--working-dir "
+
+# arg to rio command to execute a specific prog/cmd immediately on start
+# NOTE: make sure this arg goes last
+rio_term_arg_exec_start: "--command "
+
+# NOTE: syntax is
+# -->  rio --command nvim "/file/path"
+# ...so, wrapping cmd and args in '' is not needed
+rio_term_arg_exec_end: ""
+

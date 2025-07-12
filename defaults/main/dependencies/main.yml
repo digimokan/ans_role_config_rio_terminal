@@ -1,0 +1,6 @@
+# user name of main rio user
+rio_term_user_name: "user2"
+
+# command to execute to execute flatpak (required for some OSs that use flatpak)
+rio_term_flatpak_main_cmd: 'false'
+

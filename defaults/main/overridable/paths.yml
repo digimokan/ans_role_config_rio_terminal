@@ -1,0 +1,3 @@
+# effective, user-based rio terminal config file path
+rio_term_config_file_path: "/home/{{ rio_term_user_name }}/.config/rio/config.toml"
+

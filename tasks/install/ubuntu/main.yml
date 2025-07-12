@@ -1,0 +1,10 @@
+- name: "Install the 'com.rioterm.Rio' flatpak package"
+  community.general.flatpak:
+    # ref: https://flathub.org/apps/com.rioterm.Rio
+    name: "com.rioterm.Rio"
+    remote: flathub
+    executable: "{{ rio_term_flatpak_main_cmd }}"
+    state: present
+  become: true
+  become_user: root
+

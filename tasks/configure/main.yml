@@ -1,0 +1,14 @@
+- name: "Create user config file directories, if not exist"
+  ansible.builtin.file:
+    path: "{{ rio_term_config_file_path | dirname }}"
+    state: directory
+  become: true
+  become_user: "{{ rio_term_user_name }}"
+
+- name: "Configure all Rio Terminal behavior in '{{ rio_term_config_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ rio_term_config_file_path }}"
+    src: "config_toml.j2"
+  become: true
+  become_user: "{{ rio_term_user_name }}"
+

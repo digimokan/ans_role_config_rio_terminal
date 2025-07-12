@@ -1,0 +1,48 @@
+# Ref: https://rioterm.com/docs/key-bindings
+
+rio_term_keymap_close_term_window: { mods: 'control', key: 'x' }
+rio_term_keymap_clear_screen: { mods: 'control | shift', key: 'l' }
+rio_term_keymap_toggle_vi_mode: { mods: 'control', key: 'm' }
+rio_term_keymap_search_mode_backward: { mods: 'control', key: 's' }
+rio_term_keymap_search_mode_forward: { mods: 'control | shift', key: 's' }
+
+rio_term_keymap_copy_text: { mods: 'control | shift', key: 'c' }
+rio_term_keymap_paste_text: { mods: 'control | shift', key: 'v' }
+rio_term_keymap_increase_font_size: { mods: 'control', key: '=' }
+rio_term_keymap_decrease_font_size: { mods: 'control', key: '-' }
+rio_term_keymap_reset_font_size: { mods: 'control', key: '0' }
+
+rio_term_keymap_create_new_tab: { mods: 'control', key: 'n' }
+rio_term_keymap_create_next_tab: { mods: 'control', key: '.' }
+rio_term_keymap_create_prev_tab: { mods: 'control', key: ',' }
+rio_term_keymap_create_move_tab_right: { mods: 'control | shift', key: '.' }
+rio_term_keymap_create_move_tab_left: { mods: 'control | shift', key: ',' }
+
+rio_term_keymap_create_split_right: { mods: 'control', key: 'h' }
+rio_term_keymap_create_split_down: { mods: 'control', key: 'v' }
+rio_term_keymap_next_split: { mods: 'control', key: 'j' }
+rio_term_keymap_prev_split: { mods: 'control', key: 'k' }
+
+rio_term_keymap_create_close_tab_or_split: { mods: 'control', key: 'w' }
+
+# rio_term_keymap_vi_mode_up: { key: 'k' }
+# rio_term_keymap_vi_mode_down: { key: 'j' }
+# rio_term_keymap_vi_mode_left: { key: 'h' }
+# rio_term_keymap_vi_mode_right: { key: 'l' }
+# rio_term_keymap_vi_mode_line_start: { key: 'Key0' }
+# rio_term_keymap_vi_mode_line_end: { key: '-' }
+# rio_term_keymap_vi_mode_next_word_start: { key: 'w' }
+# rio_term_keymap_vi_mode_next_word_end: { key: 'e' }
+# rio_term_keymap_vi_mode_prev_word_start: { key: 'b' }
+rio_term_keymap_vi_mode_page_up: { key: 'pageup' }
+rio_term_keymap_vi_mode_page_down: { key: 'pagedown' }
+# rio_term_keymap_vi_mode_top_of_buffer: { key: 'g' }
+# rio_term_keymap_vi_mode_end_of_buffer: { mods: 'shift', key: 'g' }
+# rio_term_keymap_vi_mode_toggle_visual: { key: 'v' }
+# rio_term_keymap_vi_mode_toggle_visual_line: { mods: 'shift', key: 'v' }
+# rio_term_keymap_vi_mode_next_search_match: { key: 'n' }
+# rio_term_keymap_vi_mode_prev_search_match: { mods: 'shift', key: 'n' }
+
+rio_term_keymap_search_mode_next_search_match: { mods: 'control', key: '.' }
+rio_term_keymap_search_mode_prev_search_match: { mods: 'control', key: ',' }
+
