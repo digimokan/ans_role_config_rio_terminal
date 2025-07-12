@@ -23,9 +23,6 @@ rio_term_hide_nav_display_when_single: false
 rio_term_scroll_multiplier: 3.0
 rio_term_scroll_divider: 1.0
 
-# max number of lines to keep in the scrollback buffer
-rio_term_scrollback_history: 10000
-
 # shape of cursor: 'block', 'beam', or 'underline'
 rio_term_cursor_shape: 'block'
 # whether cursor blinks
