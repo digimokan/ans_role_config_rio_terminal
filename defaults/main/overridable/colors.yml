@@ -7,7 +7,7 @@ rio_term_colors:
     bg: '#2B2B2B'
     opacity: 0.9
   cursor:
-    fg_text: '#000000'
+    bg: '#FF5F5F'
   black:
     color0_dimmed: '#282828'
     color8_bright: '#786C5F'
