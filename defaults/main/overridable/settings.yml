@@ -6,7 +6,7 @@ rio_term_shell_cmd: '/bin/sh'
 # window decorations: "Enabled", "Disabled", "Transparent", "Buttonless"
 rio_term_window_decorations: "Enabled"
 # title options: "title", "program", "absolute_path", "columns", "lines"
-rio_term_title_bar_dynamic_content: "{{ title || program }}"
+rio_term_title_bar_dynamic_content: '{{ title || program }}'
 # padding (in pixels) to put in between terminal text and window border
 rio_term_window_padding_width_pixels: 5
 rio_term_window_padding_top_pixels: 5

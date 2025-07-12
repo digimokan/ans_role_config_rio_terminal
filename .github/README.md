@@ -1,6 +1,6 @@
 # ans_role_config_rio_terminal
 
-Install and configure the rio terminal emulator.
+Install and configure the Rio terminal emulator.
 
 [![Release](https://img.shields.io/github/release/digimokan/ans_role_config_rio_terminal.svg?label=release)](https://github.com/digimokan/ans_role_config_rio_terminal/releases/latest "Latest Release Notes")
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?label=license)](LICENSE.md "Project License")
